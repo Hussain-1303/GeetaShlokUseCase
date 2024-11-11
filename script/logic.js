@@ -3,14 +3,14 @@
 //Funcionality to pause when hovered over the div and resumes when taken out. ✅
 // Decreased the scrolling speed by adjusting frames i setTimeout [1200 => 2400] and scrollInterval[16=>32] and intial scrollSpeed[1=>0.5]
 
-let scrollSpeed = 0.5;
+let scrollSpeed = 1;
 let scrollInterval;
 
 function startScrolling() {
   try {
     scrollInterval = setInterval(() => {
       document.getElementById("vScroll").scrollTop += scrollSpeed;
-    }, 32);
+    }, 64);
   }catch (error) {
     console.error("Error Scrolling");
   }
